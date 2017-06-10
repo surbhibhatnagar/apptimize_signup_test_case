@@ -16,10 +16,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 """Test suite to verify whether an apptimize user has sucessfully registered 
 and received confirmation mail or not. This test case first signs up a user 
 with different variations of a single gmail account on apptimize platform and 
-then verifies whether user has received confirmation email from apptimize or not
-to their original gmail account or not"""
+then verifies whether user has received confirmation email from apptimize or 
+not to their original gmail account or not"""
 class SignUp(unittest.TestCase):
-
     def setUp(self):
         gecko_path = os.path.dirname(os.path.abspath(__file__))
         sys.path.append(gecko_path)
